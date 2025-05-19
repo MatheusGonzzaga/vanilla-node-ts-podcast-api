@@ -24,38 +24,40 @@ The main goal was to develop a backend API from scratch without using any framew
 ## Technologies Used
 
 - [Node.js](https://nodejs.org/)  
+  Used as the runtime environment to build and run the server-side logic using native HTTP modules without frameworks.
+
 - [TypeScript](https://www.typescriptlang.org/)  
+  Adds static typing to JavaScript, improving code safety, readability, and developer experience.
+
 - [tsx](https://github.com/esbuild-kit/tsx)  
+  Enables direct execution of TypeScript files (like `ts-node`), making development and testing faster without compilation steps.
+
 - [tsup](https://tsup.egoist.dev/)  
-- [@types/node](https://www.npmjs.com/package/@types/node) — Node.js type definitions for TypeScript  
+  A fast bundler used to compile and bundle TypeScript code for production with zero-config and great performance.
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+  The base language behind TypeScript. Understanding its core is essential when working with vanilla Node.js.
+
+- [@types/node](https://www.npmjs.com/package/@types/node)  
+  Provides type definitions for Node.js built-in modules, allowing TypeScript to understand Node-specific globals like `http`, `fs`, etc.
+
+Claro! Aqui está o tópico **"How to Use and Start"** em formato textual, numerado e claro:
 
 ---
 
-## How to Use and Start
+## How to Use?
 
-1. Clone the repository  
-```bash
-git clone https://github.com/your-username/vanilla-node-ts-podcast-api.git
-cd vanilla-node-ts-podcast-api
-````
+1. **Clone the repository**
+   Run `git clone https://github.com/your-username/vanilla-node-ts-podcast-api.git`
 
-2. Install dependencies
+2. **Install the dependencies**
+   Use `npm install` to install all required packages.
 
-```bash
-npm install
-```
+3. **Start the development server with hot reload**
+   Run `npm run start:watch` to launch the server and automatically reload on file changes.
 
-3. Start the development server with hot reload
-
-```bash
-npm run start:watch
-```
-
-4. Or start the development server (single run)
-
-```bash
-npm run start:dev
-```
+4. **Or start the development server without hot reload**
+   Use `npm run start:dev` to start the server for a single run without watching for changes.
 
 ---
 
